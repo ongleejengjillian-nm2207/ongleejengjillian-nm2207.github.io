@@ -1,6 +1,6 @@
 //section 1:  Bar chart showing top 5 International Visitor Arrivals By Inbound Tourism Markets
 const myCountries = ["China", "India", "Indonesia", "Malaysia", "Bangladesh"];
-const mynNumbers = ["88240", "54380", "33450", "24210", "17890"];
+const myNumbers = ["88240", "54380", "33450", "24210", "17890"];
 
 const dataObj = {
   labels: myCountries,
