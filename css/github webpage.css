@@ -1,63 +1,77 @@
-html, body {
-  height:100%;
-  width:100%;
-  background-color: rgb(255, 252, 252);
-  color: rgb(81, 75, 245);
-  
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-h2 {
-  color: black;
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  padding: 25px 35px;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px, 20px rgba(0,0,0,0.6)
+}
+header{
+  height: 100vh;
+  background: url("covidtourism.jpeg");
+  background-size: cover;
+  background-position: center center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+
+}
+li {
+  display: inline-block;
+}
+
+li a {
+  margin-left: 40px;
+}
+
+nav a{
+  color:#ffff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+nav a:hover{
+    color: #000;
+    background: #ddd;
+}
+
+nav a.active{
+  background: #4caf
+}
+
+h1 {
+  padding: 25px 50px 25px 100px;
+}
+h2{
+  padding: 25px 50px 25px 100px;
 }
 h3 {
-  color: #0036b4;
+  padding: 25px 50px 25px 100px;
+  background-color: lightblue;
 }
-
-.container {
-  font-family: Helvetica, Arial, sans-serif;
-  height:98%;
-  width:98%;
+p {
+  padding: 25px 50px 25px 100px;
 }
-
-.container > * {
-  background-color: rgb(226, 227, 255);
-  padding: 1em;
-}
-
-
-.content {
-  min-height: 40%;
-  overflow-y: scroll;
-}
-
-
-.container > * {
-  margin-bottom: 2%;
-  overflow-y: scroll;
-}
-
-
-@media screen and (min-width: 40em) {
-  .container > * {
-    margin-bottom: 0;
-  }
-  /* Define the grid */
-  .container {
-    display: grid;
-    grid-template-columns: 18% 60% 18%;
-    grid-gap: 2% 2%;
-    grid-template-rows: 10% auto 10%;
-  }
-  /* Place items on the grid */
-  .header {
-    grid-column: 1 / span 3;
-
-  }
-  .sidebar {
-    grid-row-end: span 2;
-  }
-  .content {
-    grid-column: 2;
-  }
-
+canvas{
+  padding: 25px 50px 25px 100px;
 }
