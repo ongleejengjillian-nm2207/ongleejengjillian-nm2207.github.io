@@ -1,0 +1,98 @@
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* navigation bar formatting, source: https://www.youtube.com/watch?v=e5wjLZzMmYM&t=325s */
+
+.home{
+  font-weight: bold;
+}
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  padding: 25px 35px;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px, 20px rgba(0,0,0,0.6)
+}
+header{
+  height: 100vh;
+  background: url("travel-sg.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+ul {
+  list-style: none;
+
+}
+li {
+  display: inline-block;
+}
+
+li a {
+  margin-left: 40px;
+}
+
+nav a{
+  color:#ffff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #000;
+  background: #ddd;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 163, 163, 0.6);
+  box-sizing: content-box;
+  width: 800px;
+  height: 250px;
+  padding: 100px;  
+  border: 10px solid white;
+  border-radius: 10px;
+  color: rgb(38, 38, 181);
+}
+
+h1 {
+  padding: 25px 50px 25px 100px;
+  font-size: 70px;
+}
+
+.myBtn {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: #000000;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  text-align: center;
+}
+
+/* text animation source: https://www.youtube.com/watch?v=qEcXe51-ZTw */
+span{
+  color: #ffdc2f
+}
