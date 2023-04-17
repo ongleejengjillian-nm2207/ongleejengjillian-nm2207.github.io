@@ -1,3 +1,4 @@
+ 
 *,
 *:before,
 *:after {
@@ -8,7 +9,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-
+/* navigation bar formatting, source: https://www.youtube.com/watch?v=e5wjLZzMmYM&t=325s*/
 nav{
   width: 100%;
   display: flex;
@@ -20,8 +21,10 @@ nav{
   padding: 25px 35px;
   font-family: "Poppins", sans-serif;
   backdrop-filter: blur(8px);
-  box-shadow: 0 20px, 20px rgba(0,0,0,0.6)
+  box-shadow: 0 20px, 20px rgba(0,0,0,0.6);
+  z-index:100;
 }
+
 header{
   height: 100vh;
   background: url("covidtourism.jpeg");
@@ -55,23 +58,46 @@ nav a:hover{
     background: #ddd;
 }
 
-nav a.active{
-  background: #4caf
-}
+
 
 h1 {
   padding: 25px 50px 25px 100px;
+  font-size: 70px;
 }
-h2{
-  padding: 25px 50px 25px 100px;
-}
-h3 {
+
+
+h2 {
   padding: 25px 50px 25px 100px;
   background-color: lightblue;
 }
 p {
-  padding: 25px 50px 25px 100px;
+  padding: 25px 120px 25px 100px;
 }
 canvas{
   padding: 25px 50px 25px 100px;
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 163, 163, 0.6);
+  box-sizing: content-box;
+  width: 800px;
+  height: 150px;
+  padding: 100px;  
+  border: 10px solid white;
+  border-radius: 10px;
+  color: rgb(38, 38, 181);
+}
+
+span{
+  color: #ffdc2f
+}
+
+div{
+  padding: 25px 120px 25px 100px;
+}
+
+
