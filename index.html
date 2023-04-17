@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My NM2207 Final Project</title>
+    <script defer type="text/javascript" src="appscripts/github webpage.js"></script>
+    <link rel="stylesheet" href="css/github webpage.css" />
+    <!-- chartjs source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+      <!-- ploty map chart source: https://plotly.com/javascript/choropleth-maps/ -->
+      <script src='https://cdn.plot.ly/plotly-2.20.0.min.js'></script>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    
+      <!-- plotly pie chart source: https://plotly.com/javascript/pie-charts/ -->
+        <script src='https://cdn.plot.ly/plotly-2.20.0.min.js'></script>
+  </head>
+
+
+  <body>
+    <nav>
+      <a href="homeindex.html">Jillian's webpage ✈️ </a>
+ <!-- navigation bar -->
+      <ul class= "navbar">
+        <li><a href="index.html">My Data Story</a></li>
+        <li><a href="https://www.canva.com/design/DAFdiX8t7RA/jL2KOdiXmO6Ty4Hr5OHhSw/view?utm_content=DAFdiX8t7RA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Storyboard</a></li>
+        <li><a href="https://docs.google.com/document/d/1LG2y1EK7pEhPyQL2F71B0i0U_KV0o2Q458kbXtJCpJo/edit?usp=sharing">Weekly Progress</a></li>
+        <li><a href="https://docs.google.com/document/d/1Ctu83TmTArvJ4U5R_bf2zf4GTmZTAhrVjBau1Wc2CoU/edit?usp=sharing">Final Writeup</a></li>
+        <li><a href="https://nm2207.org/2223S2/e0968233/web/">NM2207 filezilla</a></li>
+      </ul>
+  </nav>
+
+     <!-- Title and picture -->
+      <header class="header">
+        <div class="title">
+          <h1><div class="centered"> Tourism <br> <span class="autotype"></div></h1>
+        </div>
+     <!-- Text animated Title-->
+      <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+      <script> 
+      var typed = new Typed(".autotype", {
+      strings:["during Covid-19"],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true
+      }) 
+      </script>
+
+
+      </header>
+
+      <!-- Section 1: 2 charts using Plotly and Chartjs-->
+        <h2><center>How has Covid-19 affected tourism in Singapore?</center></h3><br>
+        <!-- % change in International visitor arrivals from the top 15 markets (2021) [Plotly chart will be drawn inside this DIV -->
+        <div id='myMap'></div>
+        <center><p>As seen in the map above, Singapore saw a <b>significant</b> fall in international visitor arrivals in 2021 compared to pre-pandemic levels. Many of these markets belong in Asia and Oceania. The most largest change in percentage was from Australia with a <b>99%</b> decrease in tourist arrivals. This is considerable change as around <b>1.14 million Australians</b> visited Singapore in 2019. With almost no tourists coming in from Australia, it is expected that Singapore's tourism will take a hit.</p></center>
+        <center><p>To find out more, lets take a look at the line chart below!</p></center>
+        <!-- tourism receipts in Singapore using a line chart-->
+          <center><canvas id="section1-line-chart" width="700" height="450"></canvas></center>
+          <center><p>This chart clearly shows the changes in the total Toursim receipts in Singapore. As we can there was a huge dip in tourism receipts from 2019 to 2021. Compared to the <b>whopping $26.94 billion</b> generated in 2018, <b>only $1.89 billion</b> was generated in 2019.</p></center> 
+            <center><p>But hold up! That still seems quite a lot is it not? But no, Singapore's is <b>largely dependent on tourism as it accounts for roughly 5.1% of the Gross Domestic Product(GDP)!</b></p></center>
+          
+
+      
+      <!-- Section 2: 1 bar chart-->
+        <h2><center>Which industries were hit hard?</center></h3>
+          <!-- bar chart comparing the revenue earned by the hotel industry pre and present pandemic -->
+          <p><center>Now it is important to note that <b>many industries</b> were greatly affected as no one anticipated the long term severity of the pandemic.</center></p>
+          <center><canvas id="section2-bar-chart" width="700" height="450"></canvas></center>
+          <center><p>These 2 bar graphs represent the months September in the years 2019 and 2021. With such a <b>drastic drop of $300 million</b> from 2019 to 2021, it can be inferred that many individuals working in such related industries would have been laid off. Hence we can see that Covid-19 not only had an adverse impact on industries, but it also affected the lives of working individuals.</p></center>
+          <!-- Section 3: pie chart -->
+        <h2><center>Why should we care?</center></h3>
+          <center><p>Why should we ordinary citizens care about such facts? Well it is impossible not to since Covid-19 has so deeply affected our daily lives and lifestyles. With a limitations placed on our social mobility, we too are unable to partake in touristy activities abroad.</p></center>
+          <center><div id='myPie'></center></div><!-- Plotly chart will be drawn inside this DIV -->
+          <center><p>This pie chart depict the frequency of visit for the year 2019. It is evident that many tourists frequent Singapore on a repeat basis, which implies that Singapore has given tourists a good impression, so much so that <b>51%</b> of said tourists have chosen to Singapore again!</p></center>
+          <center><div id='myPie2'></center></div><!-- reasons for visit [Plotly chart will be drawn inside this DIV] -->
+          <center><p>Furthermore this next pie chart gives us a breakdown on the main purposes of visit. A large majority of which either visited Sinagpore for Holiday or to visit their friends and family.</p></center>
+          <center><p>Hence this bring us back to the main question: Why should we care? Well from the statistics alone we can infer that the majority of tourists that come to Singapore on a repeat basis are likely from our neighbouring country, Malaysia. Despite this close proximity, those with family in Malaysia and Singapore were separated from Covid-19 restrictions. Therefore looking beyond the economic impact the Covid-19 brought on tourism, Covid-19 had more importantly removed one's <b>freedom of mobility and the ability to connect with loved ones.</b></p></center>
+          
+      <h2><center>Thank you for reading!</center></h3>
+  </body>
+</html> 
+
